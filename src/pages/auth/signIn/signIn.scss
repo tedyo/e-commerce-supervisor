@@ -1,0 +1,194 @@
+@use "../../../global.scss";
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px); // adjust if your layout has a header
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.login-card {
+  width: 480px;
+  height: 584px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-title {
+  font-family: "Nunito", sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 45.6px;
+  margin-bottom: 4px;
+  color: global.$primary600;
+}
+
+.welcome-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  width: 100%;
+  justify-content: center;
+}
+
+.welcome-text {
+  font-size: 16px;
+  color: #666;
+  white-space: nowrap;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #e5e7eb;
+  max-width: 384px;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.login-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.forgot-password a {
+  font-size: 14px;
+  color: #0e4257;
+  text-decoration: none;
+}
+
+.login-button {
+  background-color: global.$primary600;
+  color: white;
+  padding: 16px 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.signup-text {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #333;
+}
+
+.signup-text a {
+  color: #0e4257;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.or-divider {
+  margin: 20px 0;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+}
+
+.google-login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+
+  &:hover {
+    background-color: #f3f3f3;
+  }
+
+  .google-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-card {
+    width: 100%;
+    height: auto;
+    padding: 24px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .signin-container {
+    padding: 20px 12px;
+  }
+
+  .login-title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .welcome-wrapper {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .line {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form input {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .login-button {
+    padding: 14px 18px;
+    font-size: 15px;
+  }
+
+  .forgot-password a,
+  .signup-text {
+    font-size: 13px;
+  }
+
+  .login-title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .line {
+    max-width: 100%;
+  }
+}

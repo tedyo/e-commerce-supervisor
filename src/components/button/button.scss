@@ -1,0 +1,95 @@
+@use "../../global.scss";
+.custom-button {
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 150px;
+  min-height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  &.primary {
+    background-color: global.$primary;
+    color: global.$textWhite;
+
+    &:hover {
+      background-color: global.$primaryHover;
+    }
+  }
+  &.secondary {
+    background-color: global.$secondary;
+    color: global.$textWhite;
+
+    &:hover {
+      background-color: global.$secondaryHover;
+    }
+  }
+
+  &.primaryOutlined {
+    background-color: transparent;
+    border: 1px solid global.$primary;
+    color: global.$primary;
+
+    &:hover {
+      color: global.$textWhite;
+      border: none;
+      background-color: global.$primary;
+    }
+  }
+  &.primaryOutlinedBlue {
+    background-color: transparent;
+    border: 1px solid global.$primary;
+    color: global.$primary;
+
+    &:hover {
+      color: global.$textWhite;
+      border: none;
+      background-color: global.$primary;
+    }
+  }
+
+  &.secondaryOutlined {
+    background-color: transparent;
+    border: 1px solid global.$secondary;
+    color: global.$secondary;
+
+    &:hover {
+      border: none;
+      background-color: global.$secondary;
+      color: global.$textWhite;
+    }
+  }
+
+  &.red {
+    background-color: global.$textRed;
+    color: global.$textWhite;
+
+    &:hover {
+      background-color: #b44d4a;
+    }
+  }
+
+  &.redOutlined {
+    background-color: transparent;
+    border: 1px solid global.$textRed;
+    color: global.$textRed;
+
+    &:hover {
+      background-color: global.$textRed;
+      color: global.$textWhite;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    &:hover {
+      background-color: none !important;
+    }
+    cursor: not-allowed !important;
+  }
+}

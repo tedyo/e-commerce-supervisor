@@ -1,0 +1,58 @@
+@import "../../global.scss";
+
+@mixin Medium-Break-Point {
+  @media (max-width: 640px) {
+    @content;
+  }
+}
+.custom-title {
+  font-size: 30px;
+  text-align: center;
+  align-self: center;
+  transition: font-size 0.2s ease;
+
+  @include Medium-Break-Point() {
+    font-size: 20px !important;
+  }
+
+  &.primary {
+    color: $primary;
+  }
+  &.secondary {
+    color: $secondary;
+  }
+
+  &.primary-span {
+    color: $textBlack;
+    span {
+      color: $primary;
+    }
+  }
+
+  &.primary-red {
+    color: $primary;
+
+    span {
+      color: $textRed;
+    }
+  }
+  &.secondary-span {
+    color: $textBlack;
+    span {
+      color: $secondary;
+    }
+  }
+
+  &.primary-secondary {
+    color: $primary;
+    span {
+      color: $secondary;
+    }
+  }
+  &.secondary-primary {
+    color: $secondary;
+    span {
+      color: $primary;
+    }
+  }
+}

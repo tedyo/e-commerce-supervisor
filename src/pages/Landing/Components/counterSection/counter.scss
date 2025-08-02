@@ -1,0 +1,48 @@
+@import "./../../../../global.scss";
+
+@mixin Medium-Break-Point {
+  @media (max-width: 1150px) {
+    @content;
+  }
+}
+
+@mixin Tablet-Break-Point {
+  @media (max-width: 690px) {
+    @content;
+  }
+}
+
+@mixin Mobile-Break-Point {
+  @media (max-width: 430px) {
+    @content;
+  }
+}
+
+.flow-card-container {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  .view-more-container {
+    margin-top: 41px;
+  }
+  @include Medium-Break-Point() {
+    flex-wrap: wrap;
+    max-width: 600px;
+  }
+
+  @include Tablet-Break-Point() {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 1fr;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .hideSVG {
+    @include Medium-Break-Point() {
+      display: none;
+    }
+  }
+}

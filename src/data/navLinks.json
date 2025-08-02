@@ -1,0 +1,33 @@
+[
+  { "label": "Home", "path": "/" },
+  {
+    "label": "About Us",
+    "path": "/about-us",
+    "children": [
+      { "label": "Who We Are", "path": "/about-us/who-we-are" },
+      { "label": "Team", "path": "/about-us/team" }
+    ]
+  },
+  { "label": "News", "path": "/news" },
+  {
+    "label": "How To",
+    "path": "/how-to",
+    "children": [
+      { "label": "Apply for License", "path": "/how-to/apply" },
+      { "label": "Renew License", "path": "/how-to/renew" }
+    ]
+  },
+  {
+    "label": "Resources",
+    "path": "/resources",
+    "children": [
+      { "label": "Guides", "path": "/resources/guides" },
+      { "label": "FAQs", "path": "/resources/faqs" }
+    ]
+  },
+  {
+    "label": "Digital Economy Reporting",
+    "path": "/digital-economy-reporting"
+  },
+  { "label": "Contact US", "path": "/contact-us" }
+]

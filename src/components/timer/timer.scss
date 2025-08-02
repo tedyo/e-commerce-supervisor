@@ -1,0 +1,13 @@
+@use "../../global.scss";
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+
+  .countdown-placeholder {
+    display: inline-block;
+    color: global.$primary !important;
+    font-size: 0.9rem;
+  }
+}

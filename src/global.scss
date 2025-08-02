@@ -1,0 +1,79 @@
+$primary: #0266c4;
+$secondary: #96cc39;
+$secondary200: #d7eea8;
+$primaryLight: #eff8ff;
+$primary300: #e0f1fe;
+$primary500: #0e85e9;
+$primary400: #0e4257;
+$primary600: #0074bd;
+
+$gradient: linear-gradient(90deg, #096db0 -7.58%, #4da660 107.72%);
+
+$primaryHover: #2078cb;
+$secondaryHover: #739f28;
+//global.$secondaryHover
+$primaryLightHover: #d8eefe;
+
+//background
+
+$bg: #f7f7f7;
+// global.$bg: #f7f6fe;
+$bgWhite: white;
+$bgBlack: #343640;
+$bgVideoOverlay: #181717;
+$bgRed: #a33e3e;
+$bgLightGray: #f2f4f5;
+$bgLightGreen: #dcfce7;
+$bgLightGreenHover: #bbf7d0;
+$bgLightRed: #fee2e2;
+
+//text
+
+$textInactive: #71717a;
+$textWhite: #ffffff;
+$textBlack: #343640;
+$textPlaceholder: #c2c2c2;
+$textRed: #a33e3e;
+$textError: #d0250e;
+$textGreen: #14532d;
+
+//stroke
+$activeStroke: #0266c4;
+$inactiveStroke: #89c1f7;
+$grayStroke: #71717a;
+$lightGrayStroke: #e7eaee;
+$redStroke: #a33e3e;
+
+//width
+
+$maxWidth: 1500px;
+
+// global.$boxShadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+//   rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+$boxShadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+  rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+$lightBoxShadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+//hover state
+
+// $modernBoxShadow: 0 10px 40px -12px rgba(16, 24, 40, 0.1);
+$modernBoxShadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+$modernBorder: 1px solid $lightGrayStroke;
+$grayBoxShadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+  rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+.scrollbar-style {
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: white;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $lightGrayStroke;
+    border-radius: 100vw;
+    border: 2px solid $bgWhite;
+    cursor: auto;
+  }
+}

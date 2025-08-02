@@ -1,0 +1,42 @@
+@use "./global.scss";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  -webkit-tap-highlight-color: transparent; /*used to prevent blue background when clicking in phone on chrome*/
+  outline: none; /*used to prevent blue background when clicking in phone on every browser*/
+  // font-family: "Poppins", sans-serif;
+  font-family: "Nunito", sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background-color: global.$bg;
+
+  // overflow-y: auto;
+  // overflow-x: hidden;
+}
+
+img {
+  user-select: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.displayNone {
+  display: none !important;
+}
+
+.app-loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

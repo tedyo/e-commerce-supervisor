@@ -1,0 +1,65 @@
+@use "../../global.scss";
+
+.loader {
+  border-style: solid;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.heart-beat-loader {
+  height: 35.25px;
+  width: 60px;
+  transform-origin: center;
+  overflow: visible;
+
+  .car {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation: travel 1.75s ease-in-out infinite, fade 1.75s ease-out infinite;
+    will-change: stroke-dasharray, stroke-dashoffset;
+    transition: stroke 0.5s ease;
+  }
+
+  .track {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  @keyframes travel {
+    0% {
+      stroke-dashoffset: 100;
+    }
+
+    75% {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+
+    20%,
+    55% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+}

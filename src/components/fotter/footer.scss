@@ -1,0 +1,116 @@
+@use "../../global.scss";
+
+.footer {
+  background: linear-gradient(180deg, #177479, #13465b);
+  padding: 60px 80px;
+  color: white;
+  width: 100%;
+
+  .footer-wrapper {
+    max-width: global.$maxWidth;
+    margin: auto;
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+
+      .column {
+        flex: 1 1 200px;
+
+        h4 {
+          position: relative;
+          font-size: 18px;
+          margin-bottom: 20px;
+          font-weight: 500;
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: -15px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: white;
+          }
+        }
+
+        a,
+        p {
+          display: block;
+          color: #d9d9d9;
+          margin-bottom: 12px;
+          font-size: 14px;
+        }
+
+        a:hover {
+          text-decoration: underline;
+          color: white;
+        }
+      }
+
+      .info-section {
+        img {
+          width: 70px;
+          margin-bottom: 10px;
+        }
+
+        .amharic-title {
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: 8px;
+        }
+
+        .desc {
+          max-width: 260px;
+        }
+
+        .social {
+          margin-top: 20px;
+
+          h4 {
+            margin-bottom: 10px;
+          }
+
+          .icons {
+            display: flex;
+            gap: 16px;
+
+            svg {
+              width: 22px;
+              height: 22px;
+              cursor: pointer;
+              color: white;
+              transition: transform 0.3s ease;
+
+              &:hover {
+                transform: scale(1.2);
+                color: #f3f3f3;
+              }
+            }
+          }
+        }
+      }
+
+      .hours-section p {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 4px;
+        margin-bottom: 10px;
+
+        span {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .top {
+      flex-direction: column;
+    }
+  }
+}
