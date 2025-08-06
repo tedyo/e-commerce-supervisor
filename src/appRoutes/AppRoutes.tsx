@@ -10,6 +10,7 @@ import AddRequirement from "../pages/configuration/addRequirement/AddRequirement
 import WorkflowConfig from "../pages/configuration/workflowConfig/WorkflowConfig";
 import OtherConfig from "../components/otherConfig/OtherConfig";
 import ServiceTypes from "../pages/configuration/ServiceTypes/ServiceTypes";
+import ServiceRequirementTypes from "../pages/configuration/serviceRequirementTypes/ServiceRequirementTypes";
 
 const AppRoutes = () => {
   return (
@@ -22,6 +23,15 @@ const AppRoutes = () => {
         <Route
           path="/configuration/service/add-service-type"
           element={<AddServiceType />}
+        />
+
+        <Route
+          path="/configuration/service/requirment/add-type"
+          element={<AddRequirement />}
+        />
+        <Route
+          path="/configuration/service/requirment"
+          element={<ServiceRequirementTypes />}
         />
         <Route path="/configuration/workflow" element={<WorkflowConfig />} />
         <Route path="/configuration/others" element={<OtherConfig />} />

@@ -8,6 +8,9 @@ const ServiceTypes = () => {
   const handleAddServiceType = () => {
     navigate("add-service-type");
   };
+  const handleManage = () => {
+    navigate("/configuration/service/requirment");
+  };
   return (
     <AdminLayout>
       <div className="configuration-page">
@@ -33,7 +36,9 @@ const ServiceTypes = () => {
               <td>E-commerce operator license to operate in Ethiopia as ...</td>
               <td>Business Analysis, Market Research</td>
               <td>
-                <button className="manage-button">Manage</button>
+                <button className="manage-button" onClick={handleManage}>
+                  Manage
+                </button>
               </td>
             </tr>
           </tbody>

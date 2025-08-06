@@ -20,13 +20,16 @@
       color: #333;
 
       input,
-      textarea {
+      textarea,
+      select {
         margin-top: 0.5rem;
         padding: 0.6rem 0.8rem;
         font-size: 14px;
         border: 1px solid #ccc;
         border-radius: 4px;
         resize: vertical;
+        background-color: white;
+        appearance: none; /* Optional: makes dropdown cleaner */
       }
 
       textarea {
